@@ -12,7 +12,7 @@
     <xsl:import href="partials/typesense_libs.xsl"/>
     <xsl:template match="/">
         <xsl:variable name="doc_title" select="'Volltextsuche'"/>
-        <html class="h-100" lang="{$default_lang}">
+        <html class="h-100">
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"/>
