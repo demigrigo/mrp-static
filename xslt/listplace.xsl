@@ -73,7 +73,7 @@
                                         <td>
                                             <xsl:value-of select="count(.//tei:note[@type='mentions'])"/>
                                         </td>
-                                        <td>
+                                       <!-- <td>
                                             <xsl:choose>
                                                 <xsl:when test="./tei:location/tei:geo">
                                                     <xsl:value-of select="replace(tokenize(./tei:location[1]/tei:geo/text(), ' ')[1], ',', '.')"/>
@@ -86,7 +86,7 @@
                                                     <xsl:value-of select="replace(tokenize(./tei:location[1]/tei:geo/text(), ' ')[last()], ',', '.')"/>
                                                 </xsl:when>
                                             </xsl:choose>
-                                        </td>
+                                        </td>-->
                                         <td>
                                             <xsl:value-of select="$id"/>
                                         </td>
